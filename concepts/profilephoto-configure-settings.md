@@ -13,6 +13,12 @@ ms.date: 11/07/2024
 
 Administrators can use the Microsoft Graph API to get and configure photo update settings in an organization. They can also control the environment where user profile photos can be updated within the organization and define which roles are required to update profile user photos.
 
+> [!Note]
+> Currently, only a small set of [built-in Entra roles](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference) are supported for configuring profile photo settings. These roles include:
+>  * Global Administrator
+>  * User Administrator
+>  * People Administrator
+
 ## Configure the user profile photo environment 
 
 For hybrid tenants, user accounts can be synced from on-premises Microsoft Entra ID to the cloud via [directory sync](/azure/active-directory/architecture/sync-directory). To determine whether you have a hybrid environment, see [Determine your identity model](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide). For hybrid tenants, administrators can configure whether user profile photo updates made on-premises sync to the cloud, or whether user profile photo updates are made from the cloud only.
